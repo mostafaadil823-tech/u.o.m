@@ -5,29 +5,29 @@
 
 /* ---- Variables ---- */
 :root {
-  /* Core Palette — Luxurious Light with Depth */
-  --bg:        #fdf6f0;
-  --bg-2:      #fef0e8;
+  /* Core Palette — Walnut × Dusty Rose Luxury */
+  --bg:        #FDF0EC;
+  --bg-2:      #F5E6E0;
   --bg-card:   #ffffff;
-  --bg-card-2: #fff7f2;
+  --bg-card-2: #FDF8F6;
 
-  /* Accent — Vibrant Rose Gold meets Sapphire */
-  --rose:      #e8346a;
-  --rose-lt:   #ff6b9d;
-  --rose-dk:   #c0174f;
-  --blue:      #3b82f6;
-  --blue-lt:   #60a5fa;
-  --blue-dk:   #1d4ed8;
+  /* Accent — #C4847A is the star */
+  --rose:      #C4847A;
+  --rose-lt:   #E8B4B8;
+  --rose-dk:   #6B3A2A;
+  --blue:      #C4847A;
+  --blue-lt:   #E8B4B8;
+  --blue-dk:   #3D1F12;
 
   /* Neutrals */
-  --white:     #1a0a14;
-  --text:      #2d1a26;
-  --muted:     #8b6a7a;
-  --line:      rgba(0,0,0,0.08);
+  --white:     #3D1F12;
+  --text:      #3D1F12;
+  --muted:     #A07060;
+  --line:      rgba(107,58,42,0.1);
 
   /* Glow */
-  --glow-rose: rgba(232, 52, 106, 0.22);
-  --glow-blue: rgba(59, 130, 246, 0.18);
+  --glow-rose: rgba(196, 132, 122, 0.30);
+  --glow-blue: rgba(232, 180, 184, 0.25);
 
   --r-sm:  10px;
   --r-md:  18px;
@@ -70,20 +70,20 @@ img, svg { display: block; }
 .orb-1 {
   width: 55vw; height: 55vw;
   top: -15%;  right: -10%;
-  background: radial-gradient(circle, rgba(232,52,106,0.5), transparent 70%);
+  background: radial-gradient(circle, rgba(196,132,122,0.5), transparent 70%);
   animation-duration: 14s;
 }
 .orb-2 {
   width: 60vw; height: 60vw;
   bottom: -20%; left: -15%;
-  background: radial-gradient(circle, rgba(59,130,246,0.45), transparent 70%);
+  background: radial-gradient(circle, rgba(232,180,184,0.45), transparent 70%);
   animation-duration: 18s;
   animation-delay: -6s;
 }
 .orb-3 {
   width: 35vw; height: 35vw;
   top: 40%; left: 40%;
-  background: radial-gradient(circle, rgba(168,85,247,0.4), transparent 70%);
+  background: radial-gradient(circle, rgba(253,208,200,0.4), transparent 70%);
   opacity: 0.2;
   animation-duration: 22s;
   animation-delay: -10s;
@@ -146,13 +146,13 @@ img, svg { display: block; }
   position: absolute;
   inset: 0;
   border-radius: 50%;
-  border: 1.5px solid rgba(232, 52, 106, 0.45);
+  border: 1.5px solid rgba(196, 132, 122, 0.55);
   animation: spin-ring 16s linear infinite;
 }
 
 .logo-ring-2 {
   inset: 10px;
-  border-color: rgba(59, 130, 246, 0.4);
+  border-color: rgba(232, 180, 184, 0.4);
   animation-direction: reverse;
   animation-duration: 11s;
   border-style: dashed;
@@ -175,7 +175,7 @@ img, svg { display: block; }
   width: clamp(76px, 16vw, 100px);
   height: clamp(76px, 16vw, 100px);
   justify-content: center;
-  border: 1px solid rgba(232,52,106,0.15);
+  border: 1px solid rgba(196,132,122,0.25);
   box-shadow: 0 0 30px var(--glow-rose), 0 0 60px var(--glow-blue), 0 8px 32px rgba(0,0,0,0.08);
 }
 
@@ -222,8 +222,8 @@ img, svg { display: block; }
   gap: 4px;
 }
 
-.headline em {
-  font-style: italic;
+.headline e {
+  /* font-style: italic; */
   background: linear-gradient(100deg, var(--rose-dk) 0%, var(--rose) 45%, var(--blue) 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -259,7 +259,7 @@ img, svg { display: block; }
   transform: translate(-50%, -50%);
   width: 70%; height: 70%;
   border-radius: 50%;
-  background: radial-gradient(ellipse, rgba(232,52,106,0.15) 0%, rgba(59,130,246,0.12) 50%, transparent 70%);
+  background: radial-gradient(ellipse, rgba(196,132,122,0.18) 0%, rgba(232,180,184,0.12) 50%, transparent 70%);
   filter: blur(20px);
   animation: pulse-halo 5s ease-in-out infinite;
 }
@@ -293,14 +293,14 @@ img, svg { display: block; }
 
 .side-women .bottle-svg {
   filter: drop-shadow(0 12px 30px rgba(0,0,0,0.15))
-          drop-shadow(0 0 20px rgba(232, 52, 106, 0.4));
+          drop-shadow(0 0 20px rgba(196, 132, 122, 0.55));
   animation-duration: 6s;
   animation-delay: 0s;
 }
 
 .side-men .bottle-svg {
   filter: drop-shadow(0 12px 30px rgba(0,0,0,0.15))
-          drop-shadow(0 0 20px rgba(59, 130, 246, 0.4));
+          drop-shadow(0 0 20px rgba(232, 180, 184, 0.4));
   animation-duration: 7s;
   animation-delay: -2.5s;
 }
@@ -321,14 +321,14 @@ img, svg { display: block; }
 
 .side-women .bottle-label {
   color: var(--rose-dk);
-  border-color: rgba(232, 52, 106, 0.4);
-  background: rgba(232, 52, 106, 0.1);
+  border-color: rgba(196, 132, 122, 0.55);
+  background: rgba(196, 132, 122, 0.1);
 }
 
 .side-men .bottle-label {
   color: var(--blue-dk);
-  border-color: rgba(59, 130, 246, 0.4);
-  background: rgba(59, 130, 246, 0.1);
+  border-color: rgba(232, 180, 184, 0.5);
+  background: rgba(232, 180, 184, 0.1);
 }
 
 /* Bottle Divider */
@@ -351,7 +351,7 @@ img, svg { display: block; }
 
 @keyframes gem-pulse {
   0%, 100% { transform: scale(1); box-shadow: 0 0 10px var(--rose), 0 0 20px var(--blue); }
-  50%       { transform: scale(1.4); box-shadow: 0 0 15px var(--rose), 0 0 30px var(--blue); }
+  50%       { transform: scale(1.4); box-shadow: 0 0 18px var(--rose), 0 0 35px var(--blue); }
 }
 
 /* CTA */
@@ -380,7 +380,7 @@ img, svg { display: block; }
   position: relative;
   overflow: hidden;
   animation: gradient-shift 5s ease infinite;
-  box-shadow: 0 4px 20px rgba(232,52,106,0.3), 0 2px 8px rgba(0,0,0,0.1);
+  box-shadow: 0 4px 20px rgba(196,132,122,0.35), 0 2px 8px rgba(0,0,0,0.1);
 }
 
 @keyframes gradient-shift {
@@ -399,7 +399,7 @@ img, svg { display: block; }
   transition: opacity var(--trans);
 }
 
-.cta-btn:hover { transform: translateY(-3px) scale(1.02); box-shadow: 0 14px 40px rgba(232,52,106,0.4); }
+.cta-btn:hover { transform: translateY(-3px) scale(1.02); box-shadow: 0 14px 40px rgba(196,132,122,0.45); }
 .cta-btn:hover::before { opacity: 1; }
 .cta-btn:active { transform: scale(0.98); }
 
@@ -419,7 +419,7 @@ img, svg { display: block; }
   position: relative;
   z-index: 2;
   padding: clamp(60px, 10vw, 100px) clamp(20px, 5vw, 40px);
-  background: linear-gradient(180deg, transparent 0%, rgba(255,240,232,0.7) 30%, rgba(255,240,232,0.9) 100%);
+  background: linear-gradient(180deg, transparent 0%, rgba(245,230,224,0.7) 30%, rgba(245,230,224,0.9) 100%);
 }
 
 .social-inner {
@@ -687,4 +687,4 @@ img, svg { display: block; }
 /* Scrollbar */
 ::-webkit-scrollbar { width: 4px; }
 ::-webkit-scrollbar-track { background: var(--bg); }
-::-webkit-scrollbar-thumb { background: rgba(232,52,106,0.45); border-radius: 2px; }
+::-webkit-scrollbar-thumb { background: rgba(196,132,122,0.5); border-radius: 2px; }
